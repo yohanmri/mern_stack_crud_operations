@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f5f6ff;
+}
+
+.container{
+  padding: 10px;
+  max-width: 1200px; /* Adjust the width as necessary */
+  margin: 50px auto;
+}
+
+.btn{
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.btn-add{
+  background: #001845;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.addContainer{
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addContainer form{
+  width: 420px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.addContainer form label{
+  font-size: 18px;
+}
+
+.addContainer form input{
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.addContainer form button{
+  background-color: #001845;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.addContainer form .close-btn{
+  margin-left: auto;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.boxContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.box{
+  background-color: #001845;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  width: calc(33.333% - 20px); /* Three items per row */
+  box-sizing: border-box;
+}
+
+.box h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fbfffe;
+}
+
+.box p{
+  font-size: 16px;
+  color: #fbfffe;
+  margin-bottom: 10px;
+}
+
+.box .btn-edit,
+.box .btn-delete{
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.btn-edit{
+  background-color: #faa916;
+}
+
+.btn-delete{
+  background-color: #96031a;
+  color: white;
+}
+
+.search-bar{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
